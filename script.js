@@ -17,7 +17,7 @@ function runTheClock() {
   //console.log(hours + "hours " + minutes + "minutes " + seconds + "seconds");
 
   // 4. Showing current time using fancy maths (convert hour, min, sec to their equiv in degrees)
-  hourPosition = (hours * 360 + hourPosition) / 12;
+  hourPosition = (hours * 360 + minutePosition) / 12;
   minutePosition = (minutes * 360 + secondPosition) / 60;
   secondPosition = (seconds * 360) / 60;
 
